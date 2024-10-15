@@ -62,9 +62,9 @@ export default function ConciergeService() {
               </p>
               <p className="font-light">
                 Take the wheel out of your Ibiza experience and discover the
-                island's vibrant energy and hidden gems in complete comfort and
-                style. Our professional and reliable driver services ensure you
-                arrive at your destination relaxed, refreshed, and ready to
+                island&apos;s vibrant energy and hidden gems in complete comfort
+                and style. Our professional and reliable driver services ensure
+                you arrive at your destination relaxed, refreshed, and ready to
                 immerse yourself in the moment.
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function ConciergeService() {
               </p>
               <p className="font-light">
                 Planning a party in Ibiza deserves a touch of magic. Wheather
-                it's a birthday blash, a bachelorette extravaganza, or a
+                it&apos;s a birthday blash, a bachelorette extravaganza, or a
                 corporate gathering, our dedicated party planning team here is
                 here to turn your vision into reality.
               </p>
@@ -128,15 +128,15 @@ export default function ConciergeService() {
           <div className="col service-details flex-1 flex flex-col justify-between">
             <div className="desc text-sm mb-10">
               <p className="font-semibold mb-6">
-                Bypass the Queue and Experience Ibiza's Hottest Clubs: Secure
-                Your Guestlist Access with Us
+                Bypass the Queue and Experience Ibiza&apos;s Hottest Clubs:
+                Secure Your Guestlist Access with Us
               </p>
               <p className="font-light">
                 Bypass the Queue and Experience the electrifying energy of
-                Ibiza's most sought-after clubs with our exclusive guestlist
-                services. We leverage our established relationship with top
-                venues to secure your entry to the hottest parties and ensure a
-                seamless night out.
+                Ibiza&apos;s most sought-after clubs with our exclusive
+                guestlist services. We leverage our established relationship
+                with top venues to secure your entry to the hottest parties and
+                ensure a seamless night out.
               </p>
             </div>
             <div className="more-btn text-center md:text-left">

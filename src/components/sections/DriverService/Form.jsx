@@ -164,7 +164,7 @@ export default function DriverForm() {
                   <label className="mb-2 inline-block" htmlFor="message">
                     Other Information{" "}
                     <span className="block">
-                      -Anything else you'd like us to be aware of
+                      -Anything else you&apos;d like us to be aware of
                     </span>
                   </label>
                   <textarea

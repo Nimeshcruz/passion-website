@@ -72,7 +72,7 @@ export default function BoatForm() {
           <h2 className="text-4xl text-red text-center font-semibold mb-14">
             Give us a few details about what{" "}
             <span className="contents lg:block">
-              you need, and we'll get straight back to you!
+              you need, and we&apos;ll get straight back to you!
             </span>
           </h2>
           <div className="form">
