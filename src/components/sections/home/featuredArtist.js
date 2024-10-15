@@ -35,11 +35,11 @@ export default function HomeFeaturedArtist() {
               <div className="desc text-base lg:text-sm font-light">
                 <p className="mb-4">
                   Discover the captivating sounds of Jose Estandar, the maestro
-                  behind "Soul Sessions" on Passion Ibiza Radio. With a distinct
-                  blend of soulful melodies and infectious beats, Jose curates
-                  an immersive journey through the realms of house music. Tune
-                  in to experience his signature style and let his music elevate
-                  your soul.
+                  behind &quot;Soul Sessions&quot; on Passion Ibiza Radio. With
+                  a distinct blend of soulful melodies and infectious beats,
+                  Jose curates an immersive journey through the realms of house
+                  music. Tune in to experience his signature style and let his
+                  music elevate your soul.
                 </p>
                 <Link className="text-red underline uppercase" href="#">
                   Artist Profile
@@ -68,4 +68,3 @@ export default function HomeFeaturedArtist() {
     </section>
   );
 }
-

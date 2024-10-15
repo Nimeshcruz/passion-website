@@ -50,7 +50,7 @@ export default function HomeIntro() {
             culture. No fancy gadgets or flashy stuff. Just pure passion.
           </p>
           <p className="text-red pt-2">
-            Tune in to discover the beat of Ibiza's future
+            Tune in to discover the beat of Ibiza&apos;s future
           </p>
           <div className="intro-social child:w-[43%] md:child:w-[23%] child:pt-1 gap-6 md:gap-3 flex flex-wrap justify-center pt-3">
             {socialIcons.map((item, index) => (
@@ -79,4 +79,3 @@ function SocialIcon({ icon }) {
     </Link>
   );
 }
-

@@ -29,7 +29,7 @@ export default function HomeApps() {
                   alt="Google icon"
                   className=" w-12 lg:w-7"
                 />
-                <p>"Hey Google, talk to Passion Ibiza Radio"</p>
+                <p>&quot;Hey Google, talk to Passion Ibiza Radio&quot;</p>
               </div>
               <div className="alexa flex flex-col lg:flex-row items-center gap-5 p-4 lg:p-0">
                 <Image
@@ -92,4 +92,3 @@ export default function HomeApps() {
     </section>
   );
 }
-
