@@ -16,7 +16,7 @@ export default function FooterDownload() {
             width="160"
             height="300"
             className="w-40 mb-3"
-            src="/google-play-btn.png"
+            src="/images/google-play-btn.png"
             alt="Download passion app from Google Play"
           />
         </Link>
@@ -25,7 +25,7 @@ export default function FooterDownload() {
             width="160"
             height="300"
             className="w-40"
-            src="/app-store-btn.png"
+            src="/images/app-store-btn.png"
             alt="Download passion app from Apple Store"
           />
         </Link>
@@ -33,4 +33,3 @@ export default function FooterDownload() {
     </div>
   );
 }
-

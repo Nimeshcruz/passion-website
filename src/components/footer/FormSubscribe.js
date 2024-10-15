@@ -45,4 +45,3 @@ export default function FormSubscribe() {
     </form>
   );
 }
-

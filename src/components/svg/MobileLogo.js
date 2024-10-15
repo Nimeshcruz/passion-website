@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function MobileLogo(props) {
+export default function MobileLogo(props) {
   return (
     <svg
       id="prefix__svg1"
@@ -155,5 +153,5 @@ function MobileLogo(props) {
   );
 }
 
-const MemoMobileLogo = React.memo(MobileLogo);
-export default MemoMobileLogo;
+//const MemoMobileLogo = React.memo(MobileLogo);
+//export default MemoMobileLogo;

@@ -1,6 +1,4 @@
-import * as React from "react";
-
-function HalfHeartInv(props) {
+export default function HalfHeartInv(props) {
   return (
     <svg viewBox="0 0 1543.03 467.84" className={props.class}>
       <g data-name="Layer 2">
@@ -13,6 +11,3 @@ function HalfHeartInv(props) {
     </svg>
   );
 }
-
-const MemoHalfHeartInv = React.memo(HalfHeartInv);
-export default MemoHalfHeartInv;
