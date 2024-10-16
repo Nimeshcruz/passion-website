@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 
 import Ticket from "../../svg/Ticket";
 
@@ -8,7 +8,7 @@ export default function eventIntro() {
       <div className="row w-[90%] md:w-[80%] max-w[1900px] mx-auto flex flex-col lg:flex-row gap-20">
         <div className="col lg:w-[20%]">
           <div className="button mb-10">
-            <a
+            <Link
               href="#"
               className="bg-red pl-4 lg:pl-3 pt-[0.75rem] lg:pt-[0.55rem] pb-3 lg:pb-2 pr-8 lg:pr-7 w-full md:w-auto font-medium leading-none text-lg rounded-lg inline-flex gap-8 lg:flex justify-between items-center"
             >
@@ -16,7 +16,7 @@ export default function eventIntro() {
               <span className="text inline-block pt-1 mx-auto md:mx-0 pr-6 md:pr-0">
                 Buy Tickets
               </span>
-            </a>
+            </Link>
           </div>
           <div className="details">
             <h3 className="title text-2xl uppercase font-semibold mb-3">
@@ -56,13 +56,12 @@ export default function eventIntro() {
             ></iframe>
           </div>
           <div className="back-btn">
-            <a href="#" className="text-xl font-light">
+            <Link href="#" className="text-xl font-light">
               &lt; Back to Events
-            </a>
+            </Link>
           </div>
         </div>
       </div>
     </section>
   );
 }
-

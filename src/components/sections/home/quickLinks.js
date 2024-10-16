@@ -50,4 +50,3 @@ function Service({ item }) {
     </div>
   );
 }
-
