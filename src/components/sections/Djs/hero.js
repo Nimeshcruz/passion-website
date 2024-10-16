@@ -1,25 +1,30 @@
-import { React, useEffect } from "react";
+import Image from "next/image";
 
-import PassionWithLogo from "../../svg/PassionWithLogo";
-import PassionHeart from "../../svg/PassionHeart";
-import HeroImg from "../../../images/Djs-hero.jpg";
+import PassionWithLogo from "@src/components/svg/PassionWithLogo";
+import PassionHeart from "@src/components/svg/PassionHeart";
+//import HeroImg from "../../../images/Djs-hero.jpg";
 
 export default function DjsHero() {
-  useEffect(() => {
-    let mobileRadio = document.getElementById("mobile-player");
-    if (mobileRadio) {
-      const RadioHeight = mobileRadio.getAttribute("data-height");
-    }
-  });
+  //useEffect(() => {
+  //  let mobileRadio = document.getElementById("mobile-player");
+  //  if (mobileRadio) {
+  //    const RadioHeight = mobileRadio.getAttribute("data-height");
+  //  }
+  //});
   return (
-    <section
-      className="lg:pt-40 pb-40 lg:pb-20 lg:m-3 lg:mt-2 lg:rounded-2xl dj-bg-lg lg:bg-cover min-h-screen flex items-center bg-[auto 60%]"
-      style={{ backgroundImage: `url(${HeroImg})` }}
-    >
-      <div className="row w-[100%] lg:w-[80%] max-w-[1920px] mx-auto flex flex-col-reverse lg:flex-row">
+    <section className="lg:pt-40 pb-40 lg:pb-20 lg:m-3 lg:mt-2 lg:rounded-2xl dj-bg-lg lg:bg-cover min-h-screen flex items-center bg-[auto 60%] relative">
+      {
+        <Image
+          src="/images/Djs-hero.jpg"
+          fill
+          alt="Hero image"
+          className="object-cover rounded-xl"
+        />
+      }
+      <div className="row w-[100%] lg:w-[80%] max-w-[1920px] mx-auto flex flex-col-reverse lg:flex-row relative z-10">
         <div className="col flex-1 pt-12 md:pt-16 lg:pt-0">
           <div className="content-wrap text-center">
-            <div className="passion-heart flex justify-center items-center gap-8 lg:block mb-10 lg:mb-24">
+            <div className="passion-heart flex justify-center items-center gap-8 lg:block mb-10 lg:mb-24 ">
               <PassionWithLogo className="mx-auto w-80 hidden lg:block" />
               <PassionHeart className="w-16 lg:hidden" />
               <h1 className="text-white text-7xl leading-none font-semibold lg:font-light">
@@ -44,4 +49,3 @@ export default function DjsHero() {
     </section>
   );
 }
-

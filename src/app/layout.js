@@ -4,6 +4,8 @@ import "./globals.css";
 //import ScrollTop from "@src/components/elements/ScrollTop";
 import Header from "@src/components/header/Header";
 import Footer from "@src/components/footer/Footer";
+import HomeQuickLinks from "@src/components/sections/home/quickLinks";
+import HomeAds from "@src/components/sections/home/ads";
 
 const trap = localFont({
   src: [
@@ -58,6 +60,9 @@ export default function RootLayout({ children }) {
           <Header />
         </header>
         {children}
+
+        <HomeQuickLinks />
+        <HomeAds />
         <footer id="q-footer">
           <Footer />
         </footer>
