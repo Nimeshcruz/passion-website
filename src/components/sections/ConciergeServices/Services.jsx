@@ -1,10 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-import BoatImg from "../../../images/boat-rental.jpg";
-import DriverImg from "../../../images/driver-services.jpeg";
-import PartyImg from "../../../images/party-planning.jpg";
-import GuestImg from "../../../images/guestlist.jpg";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function ConciergeService() {
   return (
@@ -13,9 +8,10 @@ export default function ConciergeService() {
         <h2 className="text-4xl font-semibold mb-14">Boat Rental</h2>
         <div className="service flex flex-col md:flex-row gap-[8%] lg:gap-[10%]">
           <div className="col img mb-12 md:mb-0 w-[100%] md:w-[30%] pb-[100%] md:pb-[30%] relative rounded-3xl overflow-hidden">
-            <img
-              className="absolute left-0 top-0 w-[100%] h-[100%] object-cover"
-              src={BoatImg}
+            <Image
+              fill
+              className="w-[100%] h-[100%] object-cover"
+              src="/images/boat-rental.jpg"
               alt="Boat rental service"
             />
           </div>
@@ -35,7 +31,7 @@ export default function ConciergeService() {
             <div className="more-btn text-center md:text-left">
               <Link
                 className="bg-red py-4 px-10 text-sm rounded-lg inline-block"
-                to="/boat-rental/"
+                href="/boat-rental/"
               >
                 More details
               </Link>
@@ -48,9 +44,10 @@ export default function ConciergeService() {
         <h2 className="text-4xl font-semibold mb-14">Driver Services</h2>
         <div className="service flex flex-col md:flex-row gap-[8%] lg:gap-[10%]">
           <div className="col img mb-12 md:mb-0 w-[100%] md:w-[30%] pb-[100%] md:pb-[30%] relative rounded-3xl overflow-hidden">
-            <img
-              className="absolute left-0 top-0 w-[100%] h-[100%] object-cover"
-              src={DriverImg}
+            <Image
+              fill
+              className="left-0 top-0 w-[100%] h-[100%] object-cover"
+              src="/images/driver-services.jpeg"
               alt="Driver service"
             />
           </div>
@@ -71,7 +68,7 @@ export default function ConciergeService() {
             <div className="more-btn text-center md:text-left">
               <Link
                 className="bg-red py-4 px-10 text-sm rounded-lg inline-block"
-                to="/driver-service/"
+                href="/driver-service/"
               >
                 More details
               </Link>
@@ -84,9 +81,10 @@ export default function ConciergeService() {
         <h2 className="text-4xl font-semibold mb-14">Party Planning</h2>
         <div className="service flex flex-col md:flex-row gap-[8%] lg:gap-[10%]">
           <div className="col img mb-12 md:mb-0 w-[100%] md:w-[30%] pb-[100%] md:pb-[30%] relative rounded-3xl overflow-hidden">
-            <img
-              className="absolute left-0 top-0 w-[100%] h-[100%] object-cover"
-              src={PartyImg}
+            <Image
+              fill
+              className="w-[100%] h-[100%] object-cover"
+              src="/images/party-planning.jpg"
               alt="Driver service"
             />
           </div>
@@ -106,7 +104,7 @@ export default function ConciergeService() {
             <div className="more-btn text-center md:text-left">
               <Link
                 className="bg-red py-4 px-10 text-sm rounded-lg inline-block"
-                to="/party-planning/"
+                href="/party-planning/"
               >
                 More details
               </Link>
@@ -119,9 +117,10 @@ export default function ConciergeService() {
         <h2 className="text-4xl font-semibold mb-14">Guestlist</h2>
         <div className="service flex flex-col md:flex-row gap-[8%] lg:gap-[10%]">
           <div className="col img mb-12 md:mb-0 w-[100%] md:w-[30%] pb-[100%] md:pb-[30%] relative rounded-3xl overflow-hidden">
-            <img
-              className="absolute left-0 top-0 w-[100%] h-[100%] object-cover"
-              src={GuestImg}
+            <Image
+              className="w-[100%] h-[100%] object-cover"
+              fill
+              src="/images/guestlist.jpg"
               alt="Driver service"
             />
           </div>
@@ -142,7 +141,7 @@ export default function ConciergeService() {
             <div className="more-btn text-center md:text-left">
               <Link
                 className="bg-red py-4 px-10 text-sm rounded-lg inline-block"
-                to="/guest-list/"
+                href="/guest-list/"
               >
                 More details
               </Link>
@@ -153,4 +152,3 @@ export default function ConciergeService() {
     </section>
   );
 }
-

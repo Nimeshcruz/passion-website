@@ -72,10 +72,16 @@ export default function HomeIntro() {
   );
 }
 
-function SocialIcon({ icon }) {
+export function SocialIcon({ icon }) {
   return (
-    <Link href="#" className="relative aspect-[4/1]">
-      <Image src={icon.src} fill alt={icon.alt} className="object-cover" />
+    <Link href="#" className="block relative">
+      <Image
+        src={icon.src}
+        width="155"
+        height="40"
+        alt={icon.alt}
+        className="object-cover"
+      />
     </Link>
   );
 }

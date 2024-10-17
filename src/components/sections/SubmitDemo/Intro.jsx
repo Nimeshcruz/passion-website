@@ -1,14 +1,7 @@
-import React from "react";
-
-import Demobg from "../../../images/demo-intro.jpg";
-
 export default function DemoIntro() {
   return (
     <section className="py-20">
-      <div
-        className="row md:w-[80%] max-w[1900px] mb-20 md:p-4 mx-auto flex justify-center lg:justify-end md:rounded-3xl bg-cover"
-        style={{ backgroundImage: `url(${Demobg})` }}
-      >
+      <div className="row md:w-[80%] max-w[1900px] mb-20 md:p-4 mx-auto flex justify-center lg:justify-end md:rounded-3xl bg-cover bg-[url('/images/demo-intro.jpg')]">
         <div className="col md:w-[90%] lg:w-[52%] py-20 px-5 md:p-5 md:my-[5%] lg:mb-[15%] md:rounded-2xl bg-cover bg-[rgba(0,0,0,0.35)] bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-4">
           <h2 className="title text-red mb-10 text-3xl md:text-4xl leading-[1.3em] font-semibold text-center">
             Passion Ibiza radio are now accepting demos -{" "}
@@ -37,4 +30,3 @@ export default function DemoIntro() {
     </section>
   );
 }
-

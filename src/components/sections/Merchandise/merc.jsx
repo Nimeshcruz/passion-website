@@ -1,6 +1,4 @@
-import React from "react";
-
-import MercImg from "../../../images/merc-img.png";
+import Image from "next/image";
 
 export default function Merc() {
   return (
@@ -12,14 +10,14 @@ export default function Merc() {
           </p>
         </div>
       </div>
-      <div className="row w-[90%] md:w-[80%] max-w-[1900px] mx-auto">
-        <img
-          className="w-[100%] h-auto"
-          src={MercImg}
+      <div className="row w-[90%] md:w-[80%] max-w-[1900px] mx-auto relative aspect-[9/3]">
+        <Image
+          fill
+          className="w-[100%] h-auto object-contain"
+          src="/images/merc-img.png"
           alt="passion Merchandise"
         />
       </div>
     </section>
   );
 }
-
