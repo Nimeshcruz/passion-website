@@ -1,6 +1,6 @@
 "use client";
 
-import { useFormState } from "react-dom";
+//import { useFormState } from "react-dom";
 import Select from "react-select";
 import { handleContactForm } from "@src/utils/actions";
 
@@ -42,10 +42,10 @@ const initialState = {
 };
 
 export default function FormContact() {
-  const [state, formAction] = useFormState(initialState, handleContactForm);
+  //const [state, formAction] = useFormState(initialState, handleContactForm);
 
   return (
-    <form action={formAction} className="text-xs">
+    <form action={handleContactForm} className="text-xs">
       <div className="field-row flex gap-5 mb-6">
         <div className="field-col flex-1">
           <label className="mb-2 inline-block" htmlFor="name">
@@ -57,9 +57,7 @@ export default function FormContact() {
             name="name"
             required="true"
           />
-          <span className="error text-red pt-1 inline-block">
-            {state?.message}
-          </span>
+          <span className="error text-red pt-1 inline-block"></span>
         </div>
         <div className="field-col flex-1">
           <label className="mb-2 inline-block" htmlFor="email">
@@ -71,12 +69,8 @@ export default function FormContact() {
             required="true"
             name="email"
           />
-          <span className="error text-red pt-1 inline-block">
-            {state?.message}
-          </span>
-          <span className="error text-red pt-1 inline-block">
-            {state?.message}
-          </span>
+          <span className="error text-red pt-1 inline-block"></span>
+          <span className="error text-red pt-1 inline-block"></span>
         </div>
       </div>
       <div className="field-row flex gap-5 mb-6">
@@ -95,9 +89,7 @@ export default function FormContact() {
             name="subject"
             required="true"
           />
-          <span className="error text-red pt-1 inline-block">
-            {state?.message}
-          </span>
+          <span className="error text-red pt-1 inline-block"></span>
         </div>
       </div>
       <div className="field-row flex gap-5 mb-8">
@@ -111,9 +103,7 @@ export default function FormContact() {
             name="message"
             required="true"
           />
-          <span className="error text-red pt-1 inline-block">
-            {state?.message}
-          </span>
+          <span className="error text-red pt-1 inline-block"></span>
         </div>
       </div>
       <div className="field-row flex justify-end">
