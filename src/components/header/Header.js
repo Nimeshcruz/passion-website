@@ -1,12 +1,12 @@
 "use client";
-import { React, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 import Logo from "./Logo";
 import MemoMobileLogo from "../svg/MobileLogo";
 import Navigation from "./Navigation";
+//import RadioPlayer from "./RadioPlayer";
 import RadioPlayer from "./RadioPlayer";
-import MobileRadioPlayer from "./MobileRadioPlayer";
 
 export default function Header(props) {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,7 +20,7 @@ export default function Header(props) {
     <div className="q-header-wrap text-xs">
       <div className="flex flex-row-reverse justify-between w-full items-center lg:flex-row z-10">
         <div className="col-radio lg:flex-1">
-          {/*<RadioPlayer />*/}
+          <RadioPlayer />
           {/*<MobileRadioPlayer />*/}
           <div
             className="mobile-menu block relative z-10 w-10 h-10 rounded-full border-4 border-red cursor-pointer lg:hidden"
@@ -42,4 +42,3 @@ export default function Header(props) {
     </div>
   );
 }
-

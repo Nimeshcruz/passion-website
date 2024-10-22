@@ -1,5 +1,4 @@
-
-export default function Volum(props) {
+export default function Volume(props) {
   return (
     <svg viewBox="0 0 13.5 16" width="1em">
       <g data-name="Layer 2">
@@ -12,4 +11,3 @@ export default function Volum(props) {
     </svg>
   );
 }
-
