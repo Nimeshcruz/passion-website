@@ -6,17 +6,20 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      red: "#ff0037",
-      "light-red": "#ff888c",
-      black: "#101010",
-      dark: "#000000",
-      gray: "#8f8f8f",
-      white: "#fbfdf5",
-      yellow: "#eeff00",
-      transparent: "transparent",
-    },
     extend: {
+      colors: {
+        red: "#ff0037",
+        "light-red": "#ff888c",
+        black: "#101010",
+        dark: "#000000",
+        gray: "#8f8f8f",
+        white: "#fbfdf5",
+        yellow: "#eeff00",
+        transparent: "transparent",
+      },
+      maxWidth: {
+        "7xl": "120em",
+      },
       fontFamily: {
         Trap: ["var(--font-trap)"],
       },

@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer components {
+  .contianer-mx {
+    @apply max-w-7xl mx-auto hidden;
+  }
+}
 
 html {
   background: #101010;
@@ -29,14 +31,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.06rem;
   color: #fbfdf5;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-@layer base {
 }
 
 @layer utilities {

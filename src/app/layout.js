@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+
 import "./globals.css";
 
 //import ScrollTop from "@src/components/elements/ScrollTop";
@@ -6,6 +7,7 @@ import Header from "@src/components/header/Header";
 import Footer from "@src/components/footer/Footer";
 import HomeQuickLinks from "@src/components/sections/home/quickLinks";
 import HomeAds from "@src/components/sections/home/ads";
+import PageLoader from "@src/components/elements/PageLoader";
 
 const trap = localFont({
   src: [
@@ -53,14 +55,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${trap.variable} antialiased`}>
         {/*<ScrollTop />*/}
-        <header
-          id="q-header"
-          className="fixed left-0 right-0 top-0 lg:left-3 lg:right-3 lg:top-2 z-40 lg:rounded-2xl transition duration-300 ease-in px-5 lg:px-2 lg:pr-8 py-4 lg:py-2 bg-dark lg:bg-[rgba(0,0,0,0.01)] lg:bg-clip-padding lg:backdrop-filter lg:backdrop-blur-md lg:bg-opacity-5"
-        >
-          <Header />
-        </header>
+        <PageLoader />
+        <Header />
         {children}
-
         <HomeQuickLinks />
         <HomeAds />
         <footer id="q-footer">
