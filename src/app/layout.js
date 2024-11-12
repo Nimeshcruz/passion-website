@@ -7,7 +7,7 @@ import Header from "@src/components/header/Header";
 import Footer from "@src/components/footer/Footer";
 import HomeQuickLinks from "@src/components/sections/home/quickLinks";
 import HomeAds from "@src/components/sections/home/ads";
-import PageLoader from "@src/components/elements/PageLoader";
+//import PageLoader from "@src/components/elements/PageLoader";
 
 const trap = localFont({
   src: [
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${trap.variable} antialiased`}>
         {/*<ScrollTop />*/}
-        <PageLoader />
+        {/*<PageLoader /> */}
         <Header />
         {children}
         <HomeQuickLinks />

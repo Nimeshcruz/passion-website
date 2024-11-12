@@ -1,26 +1,9 @@
-import RedLogo from "../../svg/PassionHeart";
-import Button from "@src/components/elements/Button";
+import AnimatedHero from "./AnimatedHero";
 
 export default function HomeHero() {
   return (
     <section className="pt-20 md:pt-40 pb-20 m-3 mt-2 rounded-2xl bg-cover min-h-screen flex items-center bg-[url('/images/home-hero.jpg')] font-Trap">
-      <div className="container mx-auto grid grid-cols-12">
-        <div className="col-start-3 col-end-6 flex items-center justify-center flex-col space-y-12">
-          <RedLogo className="hero__red-logo w-40 md:w-44" />
-          <h1 className="text-center text-white text-3xl md:text-4xl font-semibold leading-[1.4em]">
-            House Music <br /> from the Heart
-          </h1>
-          <Button adStyles="self-center" />
-          <div className="text-center">
-            <h2 className="font-bold text-5xl md:text-6xl tracking-tighter">
-              94.4FM
-            </h2>
-            <div className="ibiza font-thin text-[2rem] md:text-[2.6rem] tracking-[1.5rem] md:tracking-[1.85rem] pl-8">
-              IBIZA
-            </div>
-          </div>
-        </div>
-      </div>
+      <AnimatedHero />
     </section>
   );
 }

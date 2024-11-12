@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
+import { AnimatedSocialIcons, AnimatedIntroImage } from "./AnimatedIntro";
 
 const socialIcons = [
   {
@@ -40,7 +39,7 @@ export default function HomeIntro() {
   return (
     <section className="py-16 md:py-20">
       <div className="row w-[90%] md:w-[80%] max-w-[1920px] mx-auto flex gap-[15%] flex-col-reverse lg:flex-row">
-        <div className="col content w-80% lg:w-[60%] text-center child:mb-4">
+        <div className="col flex flex-col items-center justify-center content w-80% lg:w-[60%] text-center child:mb-4 overflow-hidden">
           <p>
             Welcome to Passion Ibiza Radio, your home for authentic electronic
             music straight from the heart of Ibiza.
@@ -52,36 +51,11 @@ export default function HomeIntro() {
           <p className="text-red pt-2">
             Tune in to discover the beat of Ibiza&apos;s future
           </p>
-          <div className="intro-social child:w-[43%] md:child:w-[23%] child:pt-1 gap-6 md:gap-3 flex flex-wrap justify-center pt-3">
-            {socialIcons.map((item, index) => (
-              <SocialIcon key={index} icon={item} />
-            ))}
-          </div>
+          <AnimatedSocialIcons icons={socialIcons} />
         </div>
-        <div className="col image w-[80%] md:w-[65%] lg:w-[40%] mb-16 md:mb-20">
-          <div className="image-wrap relative h-100 border-red-300">
-            <img
-              className="w-[100%] object-cover inset-0"
-              src="/images/home-intro.png"
-              alt="about passion ibiza radio"
-            />
-          </div>
-        </div>
+
+        <AnimatedIntroImage />
       </div>
     </section>
-  );
-}
-
-export function SocialIcon({ icon }) {
-  return (
-    <Link href="#" className="block relative">
-      <Image
-        src={icon.src}
-        width="155"
-        height="40"
-        alt={icon.alt}
-        className="object-cover"
-      />
-    </Link>
   );
 }
